@@ -1,3 +1,8 @@
+let name = "matashii";
+let number = 1;
+
+
+
 let isCat = true;
 
 function changePic() {
@@ -9,3 +14,5 @@ function changePic() {
   }
   isCat = !isCat;
 }
+
+setInterval(changePic, 1000);
