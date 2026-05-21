@@ -1,49 +1,197 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="assets/css/styles.css">
-      <title>my web page</title>
-    </head>
-    <body>
-    <section>
-      <h1 id="target">case </h1>
-      <button onclick="sayHello()">click</button>
-  </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STREET SHOP</title>
 
-<!-- <p id="counter">0</p> -->
-   <section>
-      <p id="counter">0</p>
+    <link rel="stylesheet" href="style.css">
 
-      <button onclick="increment()">Increment Counter</button>
-      <button onclick="decrement()">Decrement Counter</button>
-      <button onclick="reset()">Reset Counter</button>
-   </section>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
- 
+    <script src="script.js" defer></script>
+</head>
 
-   <section>
-      <button id="btn">クリック</button>
+<body>
 
-        <p id="result"></p>
-   </section>
+    <!-- HEADER -->
+    <header>
 
-   <section>
-      <img id="photo" src="assets/images/cat.jpg" width ="300">
-      <button onclick="changePic()">Change Picture</button>
-   </section>
-   <!-- timer section -->
-   <section>
-    <p id="clock"></p>
-   </section>
+        <div class="logo">
+            STREET <br>
+            SHOP.
+        </div>
 
-      <script src="assets/js/main.js"></script>
-      <script src="assets/js/counter.js"></script>
-      <script src="assets/js/image.js"></script>
-      <script src="assets/js/timer.js"></script>
-      <script src="assets/js/eventListener.js"></script>
+        <nav class="menu">
+            <a href="#">New</a>
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">Kids</a>
+            <a href="#">Sports</a>
+            <a href="#">Sale</a>
+        </nav>
 
+        <div class="icons">
+            <i class="fas fa-search"></i>
 
+            <i class="fas fa-user" onclick="goLogin()"></i>
 
- 
-    </body>
+            <i class="fas fa-shopping-cart" onclick="goCart()"></i>
 
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <h1>DROP</h1>
+
+        <p>
+            Turn on notifications so you never miss a drop.
+        </p>
+
+        <button>
+            TURN ON NOTIFICATIONS
+        </button>
+
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+
+        <!-- PRODUCT 1 -->
+        <div class="card">
+
+            <i class="fa-regular fa-heart favorite"></i>
+
+            <img src="picture/shose1.jpg" alt="New Balance 550">
+
+            <h2>NEW BALANCE 550</h2>
+
+            <p>
+                Basketball shoes with premium comfort and classic design.
+            </p>
+
+            <button onclick="goProduct()">
+                BUY NOW
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="card">
+
+            <i class="fa-regular fa-heart favorite"></i>
+
+            <img src="picture/shose5.jpg" alt="Nike Dunk Low">
+
+            <h2>NIKE DUNK LOW</h2>
+
+            <p>
+                Stylish streetwear sneakers for everyday life.
+            </p>
+
+            <button onclick="goProduct()">
+                BUY NOW
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <h2>
+                    STREET <br>
+                    SHOP.
+                </h2>
+            </div>
+
+            <div class="footer-column">
+                <h3>PRODUCTS</h3>
+
+                <p>Boots</p>
+                <p>Clothes</p>
+                <p>Accessories</p>
+                <p>News</p>
+                <p>Outlet</p>
+                <p>Drops</p>
+                <p>Most Popular</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>RECOMMENDED</h3>
+
+                <p>Nike</p>
+                <p>Adidas</p>
+                <p>Jordan</p>
+                <p>Supreme</p>
+                <p>Off-White</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>SUPPORT</h3>
+
+                <p>Help</p>
+                <p>Shipping</p>
+                <p>Returns</p>
+                <p>Payment</p>
+                <p>Contact Us</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>COMPANY</h3>
+
+                <p>About Us</p>
+                <p>News</p>
+                <p>Career</p>
+                <p>Investors</p>
+            </div>
+
+        </div>
+
+        <!-- APP BUTTONS -->
+        <div class="footer-apps">
+
+            <img src="picture/appstore.png" alt="App Store">
+            <img src="picture/googleplay.png" alt="Google Play">
+
+        </div>
+
+        <!-- BOTTOM FOOTER -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Street Shop. All Rights Reserved.
+            </p>
+
+            <div class="bottom-right">
+
+                <span>
+                    <i class="fas fa-globe"></i>
+                    English (US)
+                </span>
+
+                <span>
+                    <i class="fas fa-dollar-sign"></i>
+                    USD
+                </span>
+
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
 </html>
