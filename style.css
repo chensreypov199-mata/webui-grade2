@@ -188,12 +188,20 @@ form-page input{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:50px;
-    padding:100px;
+    gap:80px;
+
+    padding:80px;
+    min-height:100vh;
+
+    flex-wrap:wrap;
 }
 
 .product-page img{
-    width:400px;
+    width:320px;
+
+    border-radius:10px;
+
+    transition:0.5s;
 }
 
 /* CART */
@@ -249,4 +257,46 @@ form-page input{
         gap:20px;
     }
 
+}
+
+.product-info{
+    max-width:350px;
+}
+
+.product-info h1{
+    font-size:60px;
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.product-info p{
+    color:lightgray;
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.product-info h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.product-info button{
+    padding:15px 40px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product-info button:hover{
+    background:gray;
+    color:white;
+    transform:scale(1.05);
+}
+
+.product-page img:hover{
+    transform:scale(1.05);
 }
